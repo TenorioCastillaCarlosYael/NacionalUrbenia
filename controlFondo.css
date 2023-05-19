@@ -1,0 +1,13 @@
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+	background-image:url(imgFondo.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	background-attatchment:fixed;
+}
+
+
