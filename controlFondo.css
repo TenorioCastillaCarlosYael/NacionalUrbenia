@@ -10,4 +10,41 @@ body {
 	background-attatchment:fixed;
 }
 
+.presentacion {	
+	padding: 1px 20px 1px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+}
 
+.acerca {
+	padding: 0px 20px 1px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+}
+
+div div {
+	/*width: 45%;*/
+	border-radius: 10px 10px 10px 10px;
+	background: #cfcfcf;
+}
+
+.acercaVida {
+}
+
+.acercaLore {
+}
+
+.docs {
+	padding: 0px 20px 1px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+}
+
+.otros {
+	padding: 0px 20px 1px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+}
+
+foother{
+}
