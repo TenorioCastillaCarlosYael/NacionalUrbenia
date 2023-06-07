@@ -7,44 +7,84 @@ body {
 	background-image:url(imgFondo.jpg);
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
-	background-attatchment:fixed;
+}
+
+.menu {
+	background: #4a4a4a;
+	border-radius: 0px 0px 20px 20px;
+	padding: 0px 0px 4px 0px;
+}
+
+.items {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.items > div {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
 }
 
 .presentacion {	
 	padding: 1px 20px 1px 20px;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
 
 .acerca {
-	padding: 0px 20px 1px 20px;
-	border-radius: 20px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
 
-div div {
-	/*width: 45%;*/
+.contenedorAcerca {
+	display: flex;
+	justify-content: space-between;
+}
+
+.acercaVida {
+	padding: 0px 10px 2px 10px;
 	border-radius: 10px 10px 10px 10px;
 	background: #cfcfcf;
 }
 
-.acercaVida {
-}
-
 .acercaLore {
+	padding: 0px 10px 2px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #cfcfcf;
 }
 
 .docs {
-	padding: 0px 20px 1px 20px;
-	border-radius: 20px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
+}
+
+.contenedorDocs {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contenedorDocs > div {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #cfcfcf;
 }
 
 .otros {
-	padding: 0px 20px 1px 20px;
-	border-radius: 20px 20px 20px 20px;
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
 
-foother{
+.contenedorOtros {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contenedorOtros > div {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #cfcfcf;
 }
