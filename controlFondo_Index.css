@@ -1,0 +1,104 @@
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+	background-image:url(imgFondo.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+/*
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+*/
+
+.menu {
+	background: #4a4a4a;
+	border-radius: 0px 0px 20px 20px;
+	padding: 0;
+}
+
+.listaMenu {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.listaMenu > li {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+}
+
+/* ¿Qué coño se pone acá? */
+/*
+.otrosItem {
+	transition: 
+}
+
+.otrosItem:hover {
+	
+}
+*/
+
+.presentacion {	
+	padding: 1px 20px 1px 20px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.acerca {
+	padding: 0px 20px 20px 20px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.acercaVida {
+	padding: 0px 8px 4px 8px;
+	border-radius: 10px 10px 10px 10px;
+	background: #cfcfcf;
+}
+
+.acercaLore {
+	padding: 0px 8px 4px 8px;
+	border-radius: 10px 10px 10px 10px;
+	background: #cfcfcf;
+}
+
+.docs {
+	padding: 0px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.contenedorDocs {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contenedorDocs > div {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #cfcfcf;
+}
+
+.otros {
+	padding: 0px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.contenedorOtros {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contenedorOtros > div {
+	padding: 8px 8px 8px 8px;
+	border-radius: 20px 20px 20px 20px;
+	background: #cfcfcf;
+}
