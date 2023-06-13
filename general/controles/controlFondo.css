@@ -1,0 +1,90 @@
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+	background-image:url(imgFondo.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+.menu { /*Incluye la imágen, y pone todo el fondo del menu en gris oscuro.*/
+	background: #4a4a4a;
+	border-radius: 0px 0px 20px 20px;
+	padding: 0;
+}
+
+.navegacion ul{ /*Afecta toda la lista en la etiqueta de navegador, no incluye la imagen.*/
+	list-style: none;
+}
+
+.listaMenu {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0px 0px 4px 0px;
+	margin: 0;
+
+}
+
+.listaMenu > li{ /*Afecta la lista en sí y las coloca en linea.*/
+	position: relative;
+	display: inline-block;
+}
+
+.listaMenu > li > a {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 20px 20px 20px 20px;
+	background: #e0e0e0;
+	text-decoration: none;
+}
+
+.listaMenu li a:hover {
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+.submenuDocs {
+	position: absolute;
+	background: #d1d1d1;
+	padding: 0px 0px 0px 10px;
+	width: 120%;
+	border-radius: 20px 20px 20px 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.submenuDocs li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.listaMenu li:hover .submenuDocs {
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenuOtros {
+	position: absolute;
+	background: #d1d1d1;
+	padding: 0px 0px 0px 10px;
+	width: 120%;
+	border-radius: 20px 20px 20px 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.submenuOtros li a {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.listaMenu li:hover .submenuOtros {
+	visibility: visible;
+	opacity: 1;
+}
