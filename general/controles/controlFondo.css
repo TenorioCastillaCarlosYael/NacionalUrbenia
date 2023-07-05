@@ -1,3 +1,7 @@
+* {
+font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
+}
+
 .logo img {
   width: 100%;
   height: auto;
@@ -9,6 +13,10 @@ body {
 	background-size: 100% 100%;
 }
 
+/* Menu Normal */
+button {
+	opacity: 0;
+}
 .menu { /*Incluye la imágen, y pone todo el fondo del menu en gris oscuro.*/
 	background: #4a4a4a;
 	border-radius: 0px 0px 20px 20px;
@@ -87,4 +95,33 @@ body {
 .listaMenu li:hover .submenuOtros {
 	visibility: visible;
 	opacity: 1;
+}
+
+/* Menu Celulares */
+
+.boton {
+	display: none;
+}
+
+@media (max-width: 588px){
+	.boton {
+		display: contents;	
+	}
+	
+	.listaMenu {
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	.boton:hover{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+/* Pie de Página */
+
+a {
+	text-decoration: none;
+	color: #000000;
 }
