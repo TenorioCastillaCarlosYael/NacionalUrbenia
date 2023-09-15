@@ -2,8 +2,9 @@
 <HTML>
 
 <HEAD>
-<link rel="icon" href="general/controles/URBIcono.png">
-<link rel="stylesheet" href="controlIndex.css">
+<link rel="icon" href="general/imagenes/URBIcono.png">
+<link rel="stylesheet" href="general/controles/controlContenido.css">
+<script src="general/controles/funciones.js"> </script>
 <link rel="stylesheet" href="general/controles/controlFondo.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +23,12 @@
 <header class="menu">
 	<div class="logo">	
 		<a href="http://nacionalurbenia.byethost6.com">
-			<img src="general/controles/URBLargo.png">
+			<img src="general/imagenes/URBLargo.png">
 		</a>
 	</div>
 
 	<nav class="navegacion">
-		<center> <button class="boton"> <img src="general/controles/menu.png" alt=""> </button> </center>
-	
+		<center> <button class="boton" id="Btn" onclick="cambiar()"> <img src="general/imagenes/menu.png"> </button> </center>
 		<ul class="listaMenu">
 			<li> <a href="https://nacionalurbenia.blogspot.com"> Blog </a> </li>
 			<li> <a href="#"> Documentos </a> 
@@ -44,7 +44,7 @@
 					<li> <a id="Radio Urbenia" href="https://open.spotify.com/playlist/0llmb7CsWPzVoKYiQcgAZI?si=3eda4148dd544c81"> Radio Urbenia </a> </li>
 					<li> <a id="Épocas" href="https://www.mediafire.com/file/v969dd97xkrex61/Urbenia.mcworld/file"> Épocas </a> </li>
 					<li> <a id="Podcast" href=""> Podcast de Urbenia </a> </li>
-					<li> <a id="Íconos" href=""> Íconos </a> </li>
+					<li> <a id="Íconos" href="general/iconos.html"> Íconos </a> </li>
 				</ul>
 			</li>
 			<li> <a href="general/creditos.html"> Créditos </a> </li>
@@ -76,10 +76,10 @@
 		   </p>
 </div>
 
-<div class="acerca">
+<div class="contenConDos">
 	<center> <a name="Acerca de"> <h1> Acerca de </h1> </a> </center>
 		
-		<div class="acercaVida">
+		<div class="contenChiqui">
 
 			<h3> En la vida real. </h3>
 				<p> 
@@ -104,7 +104,7 @@
 
 		</div>
 			
-		<div class="acercaLore">
+		<div class="contenChiqui">
 			<h3> En el lore. </h3>
 				<p>
 					Urbenia es un país megadiverso, utópico, progesista y socialista conformado 
@@ -128,16 +128,35 @@
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@papi_torrente" data-unique-id="papi_torrente" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@papi_torrente?refer=creator_embed">@papi_torrente</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
+<div class="contenConDos"> 
+	<center> <a name="poster"> <h1> ¿Quieres descargar este poster? </h1> </a> </center>
+	
+			<center> <img src="Propaganda_Socialista_De_Urbenia.png" width="50%"> </center>
+			
+		<div class="contenChiqui">
+			<center>
+				<p>
+					Tan solo da click <a class="descarga" href="descargas/Propaganda_Socialista_De_Urbenia.pdf" > AQUI </a> y podrás descargarlo en formato PDF para que lo puedas imprimir y usar!
+				</p>
+			</center>
+		</div>
+</div>
+
+<!--
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu02SrC11O249Nx1p1Jvgr-a3-ZYmE6FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+-->
+
 <hr color="black">
 		 
 	<footer class="pie">
-		<center> <h2> Contáctanos </h2> </center>
-		
-			<center> <img src="general/controles/facebook.png"> <a href="https://www.facebook.com/groups/347886053193554"> Urbenia </a> </center>
-			<center> <img src="general/controles/twitter.png"> <a href="https://twitter.com/NacionalUrbenia"> Nacional Urbenia </a> </center>
-			<center> <img src="general/controles/youtube.png"> <a href="https://www.youtube.com/channel/UC2jXEsGdc_t1EomCh_ncsGg"> Nacional Urbenia </a> </center>
-			<center> <img src="general/controles/youtube.png"> <a href="https://www.youtube.com/channel/UCPaMMAukeArIBrfbHi_FQJA"> Torrente_ </a> </center>
-	
+			<center> <h2> Contáctanos </h2> </center>
+				<div class="pie2">
+					<a href="https://www.facebook.com/groups/347886053193554"> <img src="general/imagenes/f_logo_RGB-Blue_1024.png" width="46 px"> </a>
+					<a href="https://twitter.com/NacionalUrbenia"> <img src="general/imagenes/logo-black.png" width="43 px"> </a>
+					<a href="https://www.youtube.com/channel/UC2jXEsGdc_t1EomCh_ncsGg"> <img src="general/imagenes/yt_icon_rgb.png" width="60 px"> </a>
+					<a href="https://www.youtube.com/channel/UCPaMMAukeArIBrfbHi_FQJA"> <img src="general/imagenes/yt_icon_rgb.png" width="60 px"> </a>
+					<a href="https://www.instagram.com/nacionalurbenia/"> <img src="general/imagenes/Instagram_Glyph_Black.png" width="45 px"> </a> 
+				</div>
 		<h4> <p align=right> Copyright Urbenia™ Derechos Reservados </p> </h4>
 	</footer>
 </BODY>
