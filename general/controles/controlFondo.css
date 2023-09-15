@@ -8,15 +8,16 @@ font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans
 }
 
 body {
-	background-image:url(imgFondo.jpg);
+	background-image:url(../imagenes/imgFondo.jpg);
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
 }
 
 /* Menu Normal */
 button {
-	opacity: 0;
+	display: none;
 }
+
 .menu { /*Incluye la imágen, y pone todo el fondo del menu en gris oscuro.*/
 	background: #4a4a4a;
 	border-radius: 0px 0px 20px 20px;
@@ -29,6 +30,7 @@ button {
 
 .listaMenu {
 	display: flex;
+	flex-direction:row;
 	justify-content: space-evenly;
 	padding: 0px 0px 4px 0px;
 	margin: 0;
@@ -99,27 +101,35 @@ button {
 
 /* Menu Celulares */
 
-.boton {
+@media (max-width: 574px){
+	button {
 	display: none;
-}
-
-@media (max-width: 588px){
-	.boton {
-		display: contents;	
 	}
 	
 	.listaMenu {
-		visibility: hidden;
-		opacity: 0;
+		display:flex;
+		flex-direction: column;
 	}
-	
-	.boton:hover{
-		visibility: visible;
-		opacity: 1;
+	.submenuDocs {
+	position: fixed;
+	}
+	.submenuOtros {
+	position: fixed;
 	}
 }
 
 /* Pie de Página */
+
+.pie {
+	padding: 1px 20px 1px 20px;
+	border-radius: 10px 10px 10px 10px;
+	background: #e0e0e0;
+}
+
+.pie2 {
+	display: flex;
+	justify-content: space-evenly;
+}
 
 a {
 	text-decoration: none;
