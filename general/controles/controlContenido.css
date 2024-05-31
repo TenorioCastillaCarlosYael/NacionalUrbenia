@@ -1,26 +1,32 @@
 .presentacion {	
-	padding: 1px 20px 1px 20px;
+	padding: 8px 20px;
+	margin: 8px;
 	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
 
-.contenConDos {
-	padding: 0px 20px 20px 20px;
+.contenCon {
+	padding: 8px;
+	margin: 8px;
 	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
 
 .contenChiqui {
-	padding: 0px 8px 4px 8px;
+	padding: 8px;
+	margin: 8px;
 	border-radius: 10px 10px 10px 10px;
 	background: #cfcfcf;
 }
 
-/*Espacio de Index*/
-
-.descarga {
-	color: #ff9900;
+aside {
+	width: 80%;
+	padding-left: 1px;
+	margin-left: 1px;
+	float: right;
 }
+
+/*Espacio de Index*/
 
 blockquote { /*Este es único para Tiktok*/
 	border-radius: 10px 10px 10px 10px;
