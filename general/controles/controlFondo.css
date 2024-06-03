@@ -29,6 +29,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	margin: 0px;
+	padding: 0px;
 }
 
 .listaMenu > li {
@@ -88,27 +89,22 @@ body {
 	opacity: 1;
 }
 
-@media (max-width: 574px){
 	/* Menu Celulares */
-	/*.navegacion ul{
-		justify-content: center;
-	}*/
-
+@media (max-width: 587px){
 	.listaMenu {
 		display:flow;
 		flex-direction: none;
 	}
 	
 	.listaMenu > li {
-	position: static;
-	display: grid;
-	margin-left: -30px;
-	justify-content: center;
+		position: static;
+		display: grid;
 	}
 	
 	.listaMenu > li > a {
 	display: grid;
 	border-radius: 10px;
+	justify-content: center;
 	}
 	
 	.listaMenu li:hover .submenuDocs {
@@ -125,10 +121,8 @@ body {
 }
 
 /* Pie de Página */
-
-footer {
-	padding: 8px;
-	margin: 8px;
+.contacto {
+	padding: 4px 4px 16px 4px;
 	border-radius: 10px 10px 10px 10px;
 	background: #e0e0e0;
 }
@@ -146,5 +140,5 @@ a {
 }
 
 hr {
-	height: 4px;
+	height: 3px;
 }
