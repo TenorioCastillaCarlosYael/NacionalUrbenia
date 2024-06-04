@@ -1,0 +1,257 @@
+* {
+font-family: 'Franklin Gothic', 'Arial Rounded MT', 'Trebuchet MS', 'Berlin Sans FB', 'Tw Cen MT';
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+	background-image:url(../imagenes/imgFondo.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+/* Menu Normal */
+
+.menu { /* Coloca una "burbuja" de color gris alrededor de la imagen con bordes inferiores redondeados*/
+	background: #4a4a4a;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.navegacion ul{ /* Quita el estilo de lista a todos los elementos de esta */
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+.listaMenu {
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+}
+
+.listaMenu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.listaMenu > li > a { /* Agrega un rectángulo redondeado color blanco a cada item */
+	display: block;
+	padding: 10px 36px;
+	margin: 2px;
+	border-radius: 20px;
+	background: #e0e0e0;
+}
+
+.listaMenu li a:hover {
+	color: #CE7D35;
+}
+
+.submenuDocs {
+	position: absolute;
+	background: #d1d1d1;
+	padding: 0px 12px;
+	border-radius: 8px 8px 20px 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.submenuDocs li a {
+	display: block;
+	padding: 8px;
+}
+
+.listaMenu li:hover .submenuDocs {
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenuOtros {
+	position: absolute;
+	background: #d1d1d1;
+	padding: 0px 12px;
+	border-radius: 8px 8px 20px 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.submenuOtros li a {
+	display: block;
+	padding: 8px;
+}
+
+.listaMenu li:hover .submenuOtros {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media (max-width: 587px){
+	/* Menú Celulares */
+	.listaMenu {
+		display:flow;
+		flex-direction: none;
+	}
+	
+	.listaMenu > li {
+		position: static;
+		display: grid;
+	}
+	
+	.listaMenu > li > a {
+	display: grid;
+	border-radius: 10px;
+	justify-content: center;
+	}
+	
+	.listaMenu li:hover .submenuDocs {
+	position: static;
+	visibility: visible;
+	opacity: 1;
+	}
+	
+	.listaMenu li:hover .submenuOtros {
+	position: static;
+	visibility: visible;
+	opacity: 1;
+	}
+}
+
+/* Contenido */
+.presentacion {	
+	padding: 8px 20px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #e0e0e0;
+}
+
+.contGeneral {
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #e0e0e0;
+}
+
+.acerca {
+	padding: 8px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #cfcfcf;
+}
+
+.foto {
+	margin: 0;
+	padding: 8px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.infoFecha {
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.infoFecha > p {
+	margin: 0px;
+	padding: 5px;
+}
+
+.infoC {
+	margin: 4px;
+	padding: 4px 8px;
+	background: #cfcfcf;
+	border-radius: 6px;
+}
+
+.titBloqueCreditos {
+	margin: 2px;
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.titBloqueCreditos > p {
+	margin: 0px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.acreditados {
+	margin: 0px 2px 10px 2px;
+	padding: 2px;
+	text-align: center;
+	background: #cfcfcf;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.acreditados > p {
+	margin: 2px;
+	padding: 2px;
+}
+
+.titulo {
+	text-align: center;
+	background: #a1a1a1;
+	border-radius: 10px;
+}
+
+.listaG {
+	margin: 2px;
+	padding: 2px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.listaG a {
+	margin: 2px;
+	padding: 4px 12px;
+	background: #cfcfcf;
+	border-radius: 10px;
+}
+
+blockquote { /*Este es único para Tiktok*/
+	border-radius: 10px 10px 10px 10px;
+}
+
+@media (max-width: 586px) {
+	/* Lista Fichas Técnicas */
+	.listaG {
+		display: grid;
+		justify-content: space-evenly;
+	}
+
+	.listaG a {
+		text-align: center;
+	}
+}
+
+/* Pie de Página */
+.barraContacto {
+	margin: 8px;
+	padding: 8px;
+	background: #e0e0e0;
+	border-radius: 10px;
+}
+
+.contactoRedes {
+	margin: 2px;
+	padding: 4px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* Otros */
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+hr {
+	height: 3px;
+}
